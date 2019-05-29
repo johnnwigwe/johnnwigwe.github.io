@@ -1,3 +1,3 @@
 #My personal Website
 
-personal portfolio site with all projects
+My personal portfolio site with all projects
