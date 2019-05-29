@@ -93,6 +93,15 @@ label {
     font-size: 1.2em;
 }
 
+.software-link {
+    text-decoration: none;
+    color: #78B1BB;
+}
+
+.software-link:hover {
+    color: lightblue;
+} 
+
 /*content for equipment page*/
 .myequipmentpage-container {
     margin: 150px 0 0 20px;
