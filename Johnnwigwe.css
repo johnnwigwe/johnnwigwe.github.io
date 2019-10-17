@@ -246,11 +246,6 @@ label {
     transition: all 500ms;
 }
 
-.first-nav a:hover {
-    color: lightblue;
-    text-transform: uppercase;
-}
-
 .nav-toggle:checked ~ .first-nav {
     transform: scale(1,1);
 }
@@ -367,14 +362,6 @@ footer {
      font-size: 1.0rem;
 }
 
-.bottom-footer-nav a:hover {
-     color: lightblue;
-     -ms-transform: scale(1.5);
-     -webkit-transform: scale(1.5);
-     transform: scale(1.5);
-     text-transform: uppercase;
-}
-
 /*responsive design starts here*/
 @media screen and (min-width: 800px) {
 /*  hover effect on image starts here */
@@ -464,6 +451,11 @@ footer {
       font-size: 1.1rem; 
   }
   
+  .first-nav a:hover {
+      color: lightblue;
+      text-transform: uppercase;
+}
+  
   .main-content-text {
       margin-left: 200px;
   }
@@ -498,6 +490,14 @@ footer {
       font-size: 1.2rem;
       position: relative;
   }
+    
+  .bottom-footer-nav a:hover {
+      color: lightblue;
+      -ms-transform: scale(1.5);
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5);
+      text-transform: uppercase;
+}
   
   .vertical-line {
      position: absolute;
