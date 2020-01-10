@@ -125,7 +125,7 @@ label {
 
 .resumepage-wrapper p {
     margin: 0 0 0 20px;
-    color: white;
+    /*    color: white;*/
     line-height: 25px;
     font-size: 1.2em;
 }
@@ -142,7 +142,7 @@ label {
 /*content for equipment page*/
 .myequipmentpage-container {
     margin: 150px 0 0 20px;
-    color: white;
+    /*    color: white;*/
 }
 
 .myequipmentpage-container h1 {
@@ -159,14 +159,14 @@ label {
 
 .myequipmentpage-container p {
     margin: 0 0 0 20px;
-    color: white;
+    /*    color: white;*/
     line-height: 26px;
     font-size: 1.2em;
 }
 
 /*content for project page*/
 .projectpage-container {
-    color: white;
+    /*    color: white;*/
     margin: 150px 0 0 20px;
 }
 
@@ -178,7 +178,7 @@ label {
 
 .projectpage-container p {
     margin: 0 0 0 20px;
-    color: white;
+    /*    color: white;*/
     line-height: 26px;
     font-size: 1.2em;
 }
@@ -399,7 +399,7 @@ footer {
     font-size: 1.0rem;
 }
 
-/*responsive design starts here*/
+/*responsive design for bigger screens starts here*/
 @media screen and (min-width: 800px) {
 
     /*  hover effect on image starts here */

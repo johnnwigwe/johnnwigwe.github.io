@@ -19,7 +19,7 @@ function changeColorMode(mode) {
     var darkthemebutton = document.getElementById('dark-theme');
     // get the moon icon from the DOM
     var lightthemebutton = document.getElementById('light-theme');
-    
+
     // check the mode to set: if light?
     if (mode == "light") {
         // set the class to light mode
