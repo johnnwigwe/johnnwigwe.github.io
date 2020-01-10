@@ -1,10 +1,47 @@
-html, body {
+html,
+body {
     font-family: monospace;
-    background-color: #151d20;
     margin: 0;
     padding: 0;
     height: 100%;
 }
+
+.lightbody {
+    background-color: white;
+    color: #151d20;
+}
+
+.darkbody {
+    background-color: #151d20;
+    color: white;
+}
+
+.dark-light-btns {
+    position: absolute;
+    top: 40%;
+    right: 2.9em;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.white {
+    color: #fff;
+}
+
+.sun {
+    color: #fff;
+}
+
+.moon {
+    color: #fff;
+}
+
 
 #container {
     min-height: 100%;
@@ -60,7 +97,7 @@ input[type=submit]:hover {
     width: 100%;
 }
 
-.contactmepage-form-wrapper h2, 
+.contactmepage-form-wrapper h2,
 label {
     color: #78B1BB;
 }
@@ -100,7 +137,7 @@ label {
 
 .software-link:hover {
     color: lightblue;
-} 
+}
 
 /*content for equipment page*/
 .myequipmentpage-container {
@@ -130,7 +167,7 @@ label {
 /*content for project page*/
 .projectpage-container {
     color: white;
-    margin: 150px 0 0 20px; 
+    margin: 150px 0 0 20px;
 }
 
 .projectpage-container h1 {
@@ -190,7 +227,7 @@ label {
 }
 
 .nav-toggle-label span,
-.nav-toggle-label span::before, 
+.nav-toggle-label span::before,
 .nav-toggle-label span::after {
     display: block;
     background: #78B1BB;
@@ -200,7 +237,7 @@ label {
     position: relative;
 }
 
-.nav-toggle-label span::before, 
+.nav-toggle-label span::before,
 .nav-toggle-label span::after {
     content: '';
     position: absolute;
@@ -221,7 +258,7 @@ label {
     left: 0;
     background: black;
     width: 100%;
-    transform: scale(1,0);
+    transform: scale(1, 0);
     transform-origin: top;
     transition: transform 400ms ease-in-out;
 }
@@ -247,7 +284,7 @@ label {
 }
 
 .nav-toggle:checked ~ .first-nav {
-    transform: scale(1,1);
+    transform: scale(1, 1);
 }
 
 .nav-toggle:checked ~ .first-nav a {
@@ -267,24 +304,24 @@ label {
 }
 
 .jmr-img {
-      width: 100%;
-      height: auto;
-      display: block;
-      opacity: 0.7;
-  }
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.7;
+}
 
 .img-Welcome {
-      position: absolute;
-      color: white;
-      font-size: 30px;
-      top: 35%;
-      right: 34%;
-      text-align: center;
-      padding: 10px 20px;
-  }
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    top: 35%;
+    right: 34%;
+    text-align: center;
+    padding: 10px 20px;
+}
 
 #alittle-aboutme {
-    color: white;
+    /*    color: white;*/
     text-align: left;
     margin: 20px 0 0 0;
 }
@@ -301,7 +338,7 @@ label {
 }
 
 .skills-ihave-section {
-    color: white;
+    /*    color: white;*/
     padding: 10px 0;
     margin: 0;
 }
@@ -318,27 +355,27 @@ label {
 }
 
 .skills-required-section {
-     color: white;
+    /*    color: white;*/
 }
 
 .skills-required-section h2 {
-     margin: 0 0 0 20px;
-     font-size: 20px;
+    margin: 0 0 0 20px;
+    font-size: 20px;
 }
 
 .skills-required-section p {
-     display: block;
-     padding: 10px 30px;
-     font-size: 15px;
+    display: block;
+    padding: 10px 30px;
+    font-size: 15px;
 }
 
 footer {
-     position: relative;
-     padding: 20px 0 30px 0;
-     margin: 0;
-     background-color: black;
-     height: 40px;
-     clear: both;
+    position: relative;
+    padding: 20px 0 30px 0;
+    margin: 0;
+    background-color: black;
+    height: 40px;
+    clear: both;
 }
 
 .bottom-footer-nav ul {
@@ -348,182 +385,203 @@ footer {
 }
 
 .bottom-footer-nav li {
-     position: relative;
-     float: left;
+    position: relative;
+    float: left;
 }
 
 .bottom-footer-nav a {
-     text-decoration: none;
-     float: left;
-     color: #78B1BB;
-     padding: 0 10px;
-     transition: transform .2s;
-     margin: 0 auto;
-     font-size: 1.0rem;
+    text-decoration: none;
+    float: left;
+    color: #78B1BB;
+    padding: 0 10px;
+    transition: transform .2s;
+    margin: 0 auto;
+    font-size: 1.0rem;
 }
 
 /*responsive design starts here*/
 @media screen and (min-width: 800px) {
-/*  hover effect on image starts here */
-  .img-container {
-      position: relative;
-      width: 100%;
-}
-  
-  .jmr-img {
-      width: 100%;
-      height: auto;
-      display: block;
-  }
-  
-  .background-effect {
-      background-color: black;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      transition: .5s ease;  
-  }
-  
-  .img-Welcome {
-      position: absolute;
-      color: white;
-      font-size: 60px;
-      top: 50%;
-      left: 50%;
-      text-align: center;
-      transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-  }
-  
-  .img-container:hover .background-effect {
-      opacity: 0.5;
-  }
-/*  hover effect on image end here*/
-  
-  .nav-toggle-label {
-      display: none;
-  }
-  
-  .header {
-      display: grid;
-      grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-  }
-  
-  .main-header-h1 {
-      grid-column: 2 / 3;
-  }
-  
-  .first-nav {
-/*Microsoft Edge support starts here*/
-      position: relative;
-      text-align: left;
-      transition: none;
-      transform: scale(1,1);
-      background: none;
-      top: initial;
-      left: initial;
-  /*Microsoft Edge support ends here*/ 
-    
-      
-      display: flex;
-      grid-column: 3 / 4;
-      justify-content: flex-end;
-      align-items: center;
-  }
-  
-  .first-nav ul {
-      display: flex;
-  }
-  
-  .first-nav li {
-      margin-left: 3em;
-      margin-bottom: 0;
-  }
-  
-  .first-nav a {
-      opacity: 1;
-      font-size: 1.1rem; 
-  }
-  
-  .first-nav a:hover {
-      color: lightblue;
-      text-transform: uppercase;
-}
-  
-  .main-content-text {
-      margin-left: 200px;
-  }
-  
-  footer {
-     position: relative;
-     padding: 20px 0 30px 0;
-     margin: 0;
-     background-color: black;
-     height: 40px;
-     clear: both;
-}
-  
-  .bottom-footer-nav {
-      display: flex;
-      grid-column: 2 / 3;
-      justify-content: center;
-  }
-  
-  .bottom-footer-nav ul {
-      display: flex;
-      padding: 10px 0 10px 0;
-  }
-  
-  .bottom-footer-nav li {
-      margin-left: 3em;
-      margin-right: 3em;
-      margin-bottom: 0;
-  }
-  
-  .bottom-footer-nav a {
-      font-size: 1.2rem;
-      position: relative;
-  }
-    
-  .bottom-footer-nav a:hover {
-      color: lightblue;
-      -ms-transform: scale(1.5);
-      -webkit-transform: scale(1.5);
-      transform: scale(1.5);
-      text-transform: uppercase;
-}
-  
-  .vertical-line {
-     position: absolute;
-     top: 3px;
-     right: -49px;
-     color: lightblue;
-}
-  
-/*  other pages contents*/
-  .main-content-contactme-page {
-    box-sizing: border-box;
-    margin-top: 200px;
-    padding: 0 300px;
-}
-  .resumepage-wrapper, 
-  .myequipmentpage-container,
-  .projectpage-container {
-      margin-left: 200px;
-      line-height: 3.2em;
-}
+
+    /*  hover effect on image starts here */
+    .img-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .jmr-img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .background-effect {
+        background-color: black;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: .5s ease;
+    }
+
+    .img-Welcome {
+        position: absolute;
+        color: white;
+        font-size: 60px;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    .img-container:hover .background-effect {
+        opacity: 0.5;
+    }
+
+    /*  hover effect on image end here*/
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    }
+
+    .main-header-h1 {
+        grid-column: 2 / 3;
+    }
+
+    .dark-light-btns {
+        position: absolute;
+        top: 40%;
+        right: 5.9em;
+    }
+
+    .first-nav {
+        /*Microsoft Edge support starts here*/
+        position: relative;
+        text-align: left;
+        transition: none;
+        transform: scale(1, 1);
+        background: none;
+        top: initial;
+        left: initial;
+        /*Microsoft Edge support ends here*/
+
+
+        display: flex;
+        grid-column: 3 / 4;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .first-nav ul {
+        display: flex;
+    }
+
+    .first-nav li {
+        margin-left: 3em;
+        margin-bottom: 0;
+    }
+
+    .first-nav a {
+        opacity: 1;
+        font-size: 1.1rem;
+    }
+
+    .first-nav a:hover {
+        color: lightblue;
+        text-transform: uppercase;
+    }
+
+    .sun {
+        color: #fff;
+    }
+
+    .moon {
+        color: #fff;
+    }
+
+    .lightmode {
+        background-color: white;
+        color: #444;
+    }
+
+    .main-content-text {
+        margin-left: 200px;
+    }
+
+    footer {
+        position: relative;
+        padding: 20px 0 30px 0;
+        margin: 0;
+        background-color: black;
+        height: 40px;
+        clear: both;
+    }
+
+    .bottom-footer-nav {
+        display: flex;
+        grid-column: 2 / 3;
+        justify-content: center;
+    }
+
+    .bottom-footer-nav ul {
+        display: flex;
+        padding: 10px 0 10px 0;
+    }
+
+    .bottom-footer-nav li {
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-bottom: 0;
+    }
+
+    .bottom-footer-nav a {
+        font-size: 1.2rem;
+        position: relative;
+    }
+
+    .bottom-footer-nav a:hover {
+        color: lightblue;
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        text-transform: uppercase;
+    }
+
+    .vertical-line {
+        position: absolute;
+        top: 3px;
+        right: -49px;
+        color: lightblue;
+    }
+
+    /*  other pages contents*/
+    .main-content-contactme-page {
+        box-sizing: border-box;
+        margin-top: 200px;
+        padding: 0 300px;
+    }
+
+    .resumepage-wrapper,
+    .myequipmentpage-container,
+    .projectpage-container {
+        margin-left: 200px;
+        line-height: 3.2em;
+    }
 
 }
 
 @media screen and (min-width: 1500px) {
-  .main-content-contactme-page {
-    padding: 0 600px;
-} 
+    .main-content-contactme-page {
+        padding: 0 600px;
+    }
 }
-
