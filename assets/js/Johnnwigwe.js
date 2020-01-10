@@ -37,3 +37,4 @@ function changeColorMode(mode) {
         darkthemebutton.className = 'white hide';
     }
 }
+

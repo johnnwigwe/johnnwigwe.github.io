@@ -42,7 +42,6 @@ body {
     color: #fff;
 }
 
-
 #container {
     min-height: 100%;
 }
@@ -57,7 +56,7 @@ body {
     place-items: left;
 }
 
-/*content for contact me page*/
+/*Styling for contact me page starts here mobile screen*/
 .main-content-contactme-page {
     box-sizing: border-box;
     margin-top: 200px;
@@ -105,19 +104,44 @@ label {
 #email {
     margin: 5px 0 0;
 }
+/*Styling for contact me page ends here mobile screen*/
 
-/*content for resume page*/
+/*Styling for resume page starts here mobile screen*/
 .resumepage-wrapper {
     margin: 100px 0 0 20px;
 }
 
+/*
 .resumepage-wrapper h1 {
     margin: 0;
     color: #78B1BB;
     font-size: 2.5em;
 }
+*/
 
-.resumepage-wrapper h3 {
+.lightbody .resumepage-wrapper h1 {
+    margin: 0;
+    color: #000000;
+    font-size: 2.5em;
+}
+
+.darkbody .resumepage-wrapper h1 {
+    margin: 0;
+    color: #78B1BB;
+    font-size: 2.5em;
+}
+
+/*.resumepage-wrapper h3 {
+    margin: 0;
+    color: #78B1BB;
+    font-size: 2.0em;
+}*/
+.lightbody .resumepage-wrapper h3 {
+    margin: 0;
+    color: #000000;
+    font-size: 2.0em;
+}
+.darkbody .resumepage-wrapper h3 {
     margin: 0;
     color: #78B1BB;
     font-size: 2.0em;
@@ -125,6 +149,13 @@ label {
 
 .resumepage-wrapper p {
     margin: 0 0 0 20px;
+/*    color: white;*/
+    line-height: 25px;
+    font-size: 1.2em;
+}
+
+.resumepage-wrapper li {
+	margin: 0;
     /*    color: white;*/
     line-height: 25px;
     font-size: 1.2em;
@@ -138,11 +169,12 @@ label {
 .software-link:hover {
     color: lightblue;
 }
+/*Styling for resume page ends here mobile screen*/
 
-/*content for equipment page*/
+/*Styling for equipment page starts here mobile screen*/
 .myequipmentpage-container {
     margin: 150px 0 0 20px;
-    /*    color: white;*/
+/*    color: white;*/
 }
 
 .myequipmentpage-container h1 {
@@ -159,14 +191,15 @@ label {
 
 .myequipmentpage-container p {
     margin: 0 0 0 20px;
-    /*    color: white;*/
+/*    color: white;*/
     line-height: 26px;
     font-size: 1.2em;
 }
+/*Styling for equipment page ends here mobile screen*/
 
-/*content for project page*/
+/*Styling for project page starts here mobile screen*/
 .projectpage-container {
-    /*    color: white;*/
+/*    color: white;*/
     margin: 150px 0 0 20px;
 }
 
@@ -178,7 +211,7 @@ label {
 
 .projectpage-container p {
     margin: 0 0 0 20px;
-    /*    color: white;*/
+/*    color: white;*/
     line-height: 26px;
     font-size: 1.2em;
 }
@@ -191,6 +224,7 @@ label {
 .projectpage-container a:hover {
     color: lightblue;
 }
+/*Styling for project page ends here mobile screen*/
 
 .header {
     background: black;
@@ -283,6 +317,11 @@ label {
     transition: all 500ms;
 }
 
+.first-nav a:hover {
+    color: lightblue;
+    text-transform: uppercase;
+}
+
 .nav-toggle:checked ~ .first-nav {
     transform: scale(1, 1);
 }
@@ -321,7 +360,7 @@ label {
 }
 
 #alittle-aboutme {
-    /*    color: white;*/
+/*    color: white;*/
     text-align: left;
     margin: 20px 0 0 0;
 }
@@ -338,7 +377,7 @@ label {
 }
 
 .skills-ihave-section {
-    /*    color: white;*/
+/*    color: white;*/
     padding: 10px 0;
     margin: 0;
 }
@@ -348,14 +387,15 @@ label {
     font-size: 20px;
 }
 
-.skills-ihave-section p {
-    display: block;
-    padding: 10px 30px;
-    font-size: 15px;
+.skills-ihave-section li {
+	margin: 0;
+    /*    color: white;*/
+    line-height: 25px;
+    font-size: 1.2em;
 }
 
 .skills-required-section {
-    /*    color: white;*/
+/*    color: white;*/
 }
 
 .skills-required-section h2 {
@@ -363,10 +403,11 @@ label {
     font-size: 20px;
 }
 
-.skills-required-section p {
-    display: block;
-    padding: 10px 30px;
-    font-size: 15px;
+.skills-required-section li {
+    margin: 0;
+    /*    color: white;*/
+    line-height: 25px;
+    font-size: 1.2em;
 }
 
 footer {
@@ -396,10 +437,24 @@ footer {
     padding: 0 10px;
     transition: transform .2s;
     margin: 0 auto;
-    font-size: 1.0rem;
+    font-size: 1.4em;
 }
 
-/*responsive design for bigger screens starts here*/
+.vertical-line {
+    
+}
+
+.bottom-footer-nav a:hover {
+    color: lightblue;
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    text-transform: uppercase;
+}
+
+
+
+/*responsive design for bigger screens starts here (Desktop)*/
 @media screen and (min-width: 800px) {
 
     /*  hover effect on image starts here */
@@ -442,8 +497,7 @@ footer {
     .img-container:hover .background-effect {
         opacity: 0.5;
     }
-
-    /*  hover effect on image end here*/
+    /*  hover effect on image ends here*/
 
     .nav-toggle-label {
         display: none;
@@ -456,12 +510,6 @@ footer {
 
     .main-header-h1 {
         grid-column: 2 / 3;
-    }
-
-    .dark-light-btns {
-        position: absolute;
-        top: 40%;
-        right: 5.9em;
     }
 
     .first-nav {
@@ -493,7 +541,7 @@ footer {
 
     .first-nav a {
         opacity: 1;
-        font-size: 1.1rem;
+        font-size: 1.4em;
     }
 
     .first-nav a:hover {
@@ -512,6 +560,12 @@ footer {
     .lightmode {
         background-color: white;
         color: #444;
+    }
+
+    .dark-light-btns {
+        position: absolute;
+        top: 40%;
+        right: 5.9em;
     }
 
     .main-content-text {
@@ -564,7 +618,7 @@ footer {
         color: lightblue;
     }
 
-    /*  other pages contents*/
+    /*Styling for other pages starts here*/
     .main-content-contactme-page {
         box-sizing: border-box;
         margin-top: 200px;
@@ -579,6 +633,7 @@ footer {
     }
 
 }
+/*Styling for other pages ends here*/
 
 @media screen and (min-width: 1500px) {
     .main-content-contactme-page {
