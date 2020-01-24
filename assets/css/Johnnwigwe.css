@@ -99,7 +99,7 @@ body {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: lightblue;
+  color: #fff;
   text-transform: uppercase;
 }
 
