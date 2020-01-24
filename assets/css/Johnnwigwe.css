@@ -1,642 +1,564 @@
 html,
 body {
-    font-family: monospace;
-    margin: 0;
-    padding: 0;
-    height: 100%;
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
 }
 
+/* Toggle dark or light mode ------------------------------------------------Toggle dark or light mode */
 .lightbody {
-    background-color: white;
-    color: #151d20;
+  background-color: white;
+  color: #151d20;
 }
 
 .darkbody {
-    background-color: #151d20;
-    color: white;
+  background-color: #151d20;
+  color: white;
 }
 
 .dark-light-btns {
-    position: absolute;
-    top: 40%;
-    right: 2.9em;
+  position: absolute;
+  bottom: 6%;
+  right: 2.9em;
 }
 
 .show {
-    display: block;
+  display: block;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .white {
-    color: #fff;
+  color: #fff;
 }
 
 .sun {
-    color: #fff;
+  color: #fff;
 }
 
 .moon {
+  color: #fff;
+}
+
+@media screen and (min-width: 800px) {
+
+  .sun {
     color: #fff;
+  }
+
+  .moon {
+    color: #fff;
+  }
+
+  .lightmode {
+    background-color: white;
+    color: #444;
+  }
+
+  .dark-light-btns {
+    position: absolute;
+    top: 40%;
+    right: 5.9em;
+  }
+}
+/* Toggle dark or light mode ------------------------------------------------Toggle dark or light mode */
+
+/* Top navbar ------------------------------------------------top navbar */
+#mainNav {
+  background-color: #212529;
 }
 
-#container {
-    min-height: 100%;
+#mainNav .navbar-toggler {
+  font-size: 12px;
+  right: 0;
+  padding: 13px;
+  color: white;
+  border: 0;
+  /* background-color: #78B1BB; */
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-#main {
-    overflow: auto;
-    padding-bottom: 100px;
+#mainNav .navbar-brand {
+  color: #78B1BB;
+  font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-.main-content {
-    display: grid;
-    place-items: left;
+#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: #78B1BB;
 }
 
-/*Styling for contact me page starts here mobile screen*/
-.main-content-contactme-page {
-    box-sizing: border-box;
-    margin-top: 200px;
-    padding: 0 30px;
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 90%;
+  font-weight: 400;
+  padding: 0.75em 0;
+  letter-spacing: 1px;
+  color: #78B1BB;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: lightblue;
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.75em;
+    transition: all 0.3s;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em !important;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #212529;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+    padding: 12px 0;
+  }
+}
+/* Top navbar ------------------------------------------------top navbar */
+
+/* Image container ------------------------------------------------Image container */
+.img-container {
+  position: relative;
+  width: 100%;
+  /* padding: 90px 40px; */
+}
+
+.darkbody .jmr-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.7;
+}
+
+.lightbody .jmr-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.darkbody .img-Welcome {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  top: 35%;
+  right: 34%;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.lightbody .img-Welcome {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  top: 35%;
+  right: 34%;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+@media screen and (min-width: 992px) {
+
+  /*  hover effect on image starts here */
+  .img-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .jmr-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .background-effect {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s ease;
+  }
+
+  .img-Welcome {
+    position: absolute;
+    color: white;
+    font-size: 60px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  .img-container:hover .background-effect {
+    opacity: 0.5;
+  }
+}
+/* Image container ------------------------------------------------Image container */
+
+/* About me section ------------------------------------------------About me section */
+#about-me {
+  padding: 40px 0 0 0;
+}
+
+.darkbody #about-me h2 {
+  margin: 0 0 0 10px;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.lightbody #about-me h2 {
+  margin: 0 0 0 10px;
+  font-size: 1.5em;
+  color: #151d20;
+}
+
+.darkbody #about-me p {
+  margin: 0 0 0 10px;
+  padding: 20px 0;
+  font-size: 1.2em;
+  line-height: 1.5rem;
+  color: #78B1BB;
+}
+
+.lightbody #about-me p {
+  margin: 0 0 0 10px;
+  padding: 20px 0;
+  font-size: 1.2em;
+  line-height: 1.5rem;
+  color: #151d20;
+}
+
+#about-me ul {
+  padding: 20px 0 0 30px;
+}
+
+.darkbody #about-me li {
+  line-height: 35px;
+  font-size: 1.2em;
+  color: #78B1BB;
+}
+
+.lightbody #about-me li {
+  line-height: 35px;
+  font-size: 1.2em;
+  color: #151d20;
+}
+/* About me section ------------------------------------------------About me section */
+
+/* Project page ------------------------------------------------Project page */
+#projects {
+  padding: 10px 0 0 0;
+  color: #151d20;
+}
+
+.darkbody #projects h2 {
+  color: #fff;
+  margin: 0 0 0 10px;
+  font-size: 1.9em;
+}
+
+.lightbody #projects h2 {
+  color: #151d20;
+  margin: 0 0 0 10px;
+  font-size: 1.9em;
+}
+
+.darkbody #projects p {
+  margin: 0 0 0 10px;
+  padding: 10px 0;
+  color: #78B1BB;
+  font-size: 1.2em;
+}
+
+.lightbody #projects p {
+  margin: 0 0 0 10px;
+  padding: 10px 0;
+  color: #151d20;
+  font-size: 1.2em;
+}
+
+.darkbody #projects ul {
+  padding: 0 0 0 30px;
+  color: #78B1BB;
+}
+
+.lightbody #projects ul {
+  padding: 0 0 0 30px;
+  color: #151d20;
+}
+
+.darkbody #projects a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.lightbody #projects a {
+  text-decoration: none;
+  color: #78B1BB;
+}
+
+.darkbody #projects a:hover {
+  color: lightblue;
+}
+
+.lightbody #projects a:hover {
+  color: lightblue;
+}
+/* Project section ------------------------------------------------Project section */
+
+/* Resume page section ------------------------------------------------Resume page section */
+.darkbody #resume {
+  padding: 20px 0 0 0;
+  color: #78B1BB;
+}
+
+.lightbody #resume {
+  padding: 20px 0 0 0;
+  color: #151d20;
+}
+
+.darkbody #resume .card {
+  background-color: #151d20;
+  border: 1px solid #78B1BB;
+}
+
+.lightbody #resume .card {
+  background-color: white;
+  color: #151d20;
+  border: 1px solid white;
+}
+
+.darkbody #resume .card-header {
+  border-bottom: 1px solid #78B1BB;
+}
+
+.lightbody #resume .card-header {
+  background-color: white;
+  border-bottom: 1px solid #151d20;
+}
+
+.darkbody #resume h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 1.9em;
+}
+
+.lightbody #resume h2 {
+  text-align: center;
+  color: #151d20;
+  font-size: 1.9em;
+}
+
+.darkbody #resume h3 {
+  padding: 10px 0 0 0;
+  color: #fff;
+  font-size: 2.0em;
+}
+
+.lightbody #resume h3 {
+  padding: 10px 0 0 0;
+  color: #151d20;
+  font-size: 2.0em;
+}
+
+.darkbody #resume p {
+  color: #78B1BB;
+  line-height: 25px;
+  font-size: 1.2em;
+}
+
+.lightbody #resume p {
+  color: #151d20;
+  line-height: 25px;
+  font-size: 1.2em;
+}
+
+.darkbody #resume li {
+  color: #78B1BB;
+  line-height: 25px;
+  font-size: 1.2em;
+}
+
+.lightbody #resume li {
+  color: #151d20;
+  line-height: 25px;
+  font-size: 1.2em;
+}
+
+.darkbody #resume a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.lightbody #resume a {
+  text-decoration: none;
+  color: #78B1BB;
+}
+
+.darkbody #resume a:hover {
+  color: lightblue;
+}
+
+.lightbody #resume a:hover {
+  color: lightblue;
+}
+/* Resume page section ------------------------------------------------Resume page section */
+
+/* Contact me section ------------------------------------------------Contact me section */
+#contact-me {
+  padding: 60px 0;
+}
+
+.darkbody #contact-me .card {
+  background-color: #151d20;
+  border: 1px solid #151d20;
+}
+
+.lightbody #contact-me .card {
+  background-color: white;
+  color: #151d20;
+  border: 1px solid white;
+}
+
+.darkbody #contact-me .card-header {
+  border-bottom: 1px solid #78B1BB;
+}
+
+.lightbody #contact-me .card-header {
+  background-color: #fff;
+  border-bottom: 1px solid #151d20;
+}
+
+.darkbody #contact-me h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.lightbody #contact-me h2 {
+  text-align: center;
+  color: #151d20;
+}
+
+.darkbody #contact-me label {
+  color: #fff;
+}
+
+.lightbody #contact-me label {
+  color: #151d20;
+}
+
 
 input[type=text],
 select,
 textarea,
 input[type=email] {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-input[type=submit] {
-    color: white;
-    background-color: #78B1BB;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.darkbody #contact-me button {
+  color: #151d20;
+  background-color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-input[type=submit]:hover {
-    background-color: lightblue;
-    color: black;
+.lightbody #contact-me button {
+  color: white;
+  background: #212529;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.contactmepage-form-wrapper {
-    border-radius: 5px;
-    width: 100%;
+.darkbody #contact-me button:hover {
+  background-color: lightblue;
+  color: #151d20;
 }
 
-.contactmepage-form-wrapper h2,
-label {
-    color: #78B1BB;
+.lightbody #contact-me button:hover {
+  background-color: #78B1BB;
+  color: #151d20;
 }
+/* Contact me section ------------------------------------------------Contact me section */
 
-#email {
-    margin: 5px 0 0;
-}
-/*Styling for contact me page ends here mobile screen*/
-
-/*Styling for resume page starts here mobile screen*/
-.resumepage-wrapper {
-    margin: 100px 0 0 20px;
-}
-
-/*
-.resumepage-wrapper h1 {
-    margin: 0;
-    color: #78B1BB;
-    font-size: 2.5em;
-}
-*/
-
-.lightbody .resumepage-wrapper h1 {
-    margin: 0;
-    color: #000000;
-    font-size: 2.5em;
-}
-
-.darkbody .resumepage-wrapper h1 {
-    margin: 0;
-    color: #78B1BB;
-    font-size: 2.5em;
-}
-
-/*.resumepage-wrapper h3 {
-    margin: 0;
-    color: #78B1BB;
-    font-size: 2.0em;
-}*/
-.lightbody .resumepage-wrapper h3 {
-    margin: 0;
-    color: #000000;
-    font-size: 2.0em;
-}
-.darkbody .resumepage-wrapper h3 {
-    margin: 0;
-    color: #78B1BB;
-    font-size: 2.0em;
-}
-
-.resumepage-wrapper p {
-    margin: 0 0 0 20px;
-/*    color: white;*/
-    line-height: 25px;
-    font-size: 1.2em;
-}
-
-.resumepage-wrapper li {
-	margin: 0;
-    /*    color: white;*/
-    line-height: 25px;
-    font-size: 1.2em;
-}
-
-.software-link {
-    text-decoration: none;
-    color: #78B1BB;
-}
-
-.software-link:hover {
-    color: lightblue;
-}
-/*Styling for resume page ends here mobile screen*/
-
-/*Styling for equipment page starts here mobile screen*/
-.myequipmentpage-container {
-    margin: 150px 0 0 20px;
-/*    color: white;*/
+/* Equipment page section ------------------------------------------------Equipment page section */
+/* .myequipmentpage-container {
+  margin: 150px 0 0 20px;
 }
 
 .myequipmentpage-container h1 {
-    margin: 0;
-    color: #78B1BB;
-    font-size: 2.5em;
+  margin: 0;
+  color: #78B1BB;
+  font-size: 2.5em;
 }
 
 .myequipmentpage-container h3 {
-    margin: 0;
-    color: #78B1BB;
-    font-size: 2.0em;
+  margin: 0;
+  color: #78B1BB;
+  font-size: 2.0em;
 }
 
 .myequipmentpage-container p {
-    margin: 0 0 0 20px;
-/*    color: white;*/
-    line-height: 26px;
-    font-size: 1.2em;
-}
-/*Styling for equipment page ends here mobile screen*/
+  margin: 0 0 0 20px;
+  line-height: 26px;
+  font-size: 1.2em;
+} */
+/* Equipment page ------------------------------------------------Equipment page */
 
-/*Styling for project page starts here mobile screen*/
-.projectpage-container {
-/*    color: white;*/
-    margin: 150px 0 0 20px;
-}
-
-.projectpage-container h1 {
-    margin: 0;
-    color: #78B1BB;
-    font-size: 2.5em;
+/* Footer section ------------------------------------------------Footer section */
+.footer {
+  padding: 25px 0;
+  text-align: center;
+  margin-top: 1em;
+  background: #212529;
 }
 
-.projectpage-container p {
-    margin: 0 0 0 20px;
-/*    color: white;*/
-    line-height: 26px;
-    font-size: 1.2em;
+.social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  line-height: 3rem;
+  color: rgba(120, 177, 187, 1)
 }
 
-.projectpage-container a {
-    text-decoration: none;
-    color: #78B1BB;
+.social a:hover {
+  background: #151d20;
+  color: rgba(255, 255, 255, 1);
 }
 
-.projectpage-container a:hover {
-    color: lightblue;
+.social a:active {
+  color: rgba(255, 255, 255, 1);
 }
-/*Styling for project page ends here mobile screen*/
-
-.header {
-    background: black;
-    text-align: center;
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-}
-
-.header a {
-    color: #78B1BB;
-    text-decoration: none;
-}
-
-.nav-toggle {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-}
-
-.nav-toggle:focus ~ .nav-toggle-label {
-    outline: 3px solid rgba(lightblue, .75);
-}
-
-.nav-toggle-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 1em;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-    display: block;
-    background: #78B1BB;
-    height: 2px;
-    width: 2em;
-    border-radius: 2px;
-    position: relative;
-}
-
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-    content: '';
-    position: absolute;
-}
-
-.nav-toggle-label span::after {
-    top: 7px;
-}
-
-.nav-toggle-label span::before {
-    bottom: 7px;
-}
-
-.first-nav {
-    position: absolute;
-    text-align: left;
-    top: 100%;
-    left: 0;
-    background: black;
-    width: 100%;
-    transform: scale(1, 0);
-    transform-origin: top;
-    transition: transform 400ms ease-in-out;
-}
-
-.first-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.first-nav li {
-    margin-left: 1em;
-    margin-bottom: 1em;
-}
-
-.first-nav a {
-    color: #78B1BB;
-    text-decoration: none;
-    font-size: 1.9rem;
-    opacity: 0;
-    transition: opacity 150ms ease-in-out;
-    transition: all 500ms;
-}
-
-.first-nav a:hover {
-    color: lightblue;
-    text-transform: uppercase;
-}
-
-.nav-toggle:checked ~ .first-nav {
-    transform: scale(1, 1);
-}
-
-.nav-toggle:checked ~ .first-nav a {
-    opacity: 1;
-    transition: opacity 250ms ease-in-out 250ms;
-}
-
-.main-content {
-    display: grid;
-    grid-column: 2 / 2;
-}
-
-.img-container {
-    position: relative;
-    width: 100%;
-    margin-top: 60px;
-}
-
-.jmr-img {
-    width: 100%;
-    height: auto;
-    display: block;
-    opacity: 0.7;
-}
-
-.img-Welcome {
-    position: absolute;
-    color: white;
-    font-size: 30px;
-    top: 35%;
-    right: 34%;
-    text-align: center;
-    padding: 10px 20px;
-}
-
-#alittle-aboutme {
-/*    color: white;*/
-    text-align: left;
-    margin: 20px 0 0 0;
-}
-
-#alittle-aboutme h2 {
-    margin: 0 0 0 20px;
-    font-size: 20px;
-}
-
-#alittle-aboutme p {
-    padding: 0 30px;
-    font-size: 15px;
-    line-height: 1.5rem;
-}
-
-.skills-ihave-section {
-/*    color: white;*/
-    padding: 10px 0;
-    margin: 0;
-}
-
-.skills-ihave-section h2 {
-    margin: 0 0 0 20px;
-    font-size: 20px;
-}
-
-.skills-ihave-section li {
-	margin: 0;
-    /*    color: white;*/
-    line-height: 25px;
-    font-size: 1.2em;
-}
-
-.skills-required-section {
-/*    color: white;*/
-}
-
-.skills-required-section h2 {
-    margin: 0 0 0 20px;
-    font-size: 20px;
-}
-
-.skills-required-section li {
-    margin: 0;
-    /*    color: white;*/
-    line-height: 25px;
-    font-size: 1.2em;
-}
-
-footer {
-    position: relative;
-    padding: 20px 0 30px 0;
-    margin: 0;
-    background-color: black;
-    height: 40px;
-    clear: both;
-}
-
-.bottom-footer-nav ul {
-    list-style: none;
-    overflow: hidden;
-    padding: 0 0 0 20px;
-}
-
-.bottom-footer-nav li {
-    position: relative;
-    float: left;
-}
-
-.bottom-footer-nav a {
-    text-decoration: none;
-    float: left;
-    color: #78B1BB;
-    padding: 0 10px;
-    transition: transform .2s;
-    margin: 0 auto;
-    font-size: 1.4em;
-}
-
-.vertical-line {
-    
-}
-
-.bottom-footer-nav a:hover {
-    color: lightblue;
-    -ms-transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-    text-transform: uppercase;
-}
-
-
-
-/*responsive design for bigger screens starts here (Desktop)*/
-@media screen and (min-width: 800px) {
-
-    /*  hover effect on image starts here */
-    .img-container {
-        position: relative;
-        width: 100%;
-    }
-
-    .jmr-img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    .background-effect {
-        background-color: black;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        transition: .5s ease;
-    }
-
-    .img-Welcome {
-        position: absolute;
-        color: white;
-        font-size: 60px;
-        top: 50%;
-        left: 50%;
-        text-align: center;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-    }
-
-    .img-container:hover .background-effect {
-        opacity: 0.5;
-    }
-    /*  hover effect on image ends here*/
-
-    .nav-toggle-label {
-        display: none;
-    }
-
-    .header {
-        display: grid;
-        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-    }
-
-    .main-header-h1 {
-        grid-column: 2 / 3;
-    }
-
-    .first-nav {
-        /*Microsoft Edge support starts here*/
-        position: relative;
-        text-align: left;
-        transition: none;
-        transform: scale(1, 1);
-        background: none;
-        top: initial;
-        left: initial;
-        /*Microsoft Edge support ends here*/
-
-
-        display: flex;
-        grid-column: 3 / 4;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    .first-nav ul {
-        display: flex;
-    }
-
-    .first-nav li {
-        margin-left: 3em;
-        margin-bottom: 0;
-    }
-
-    .first-nav a {
-        opacity: 1;
-        font-size: 1.4em;
-    }
-
-    .first-nav a:hover {
-        color: lightblue;
-        text-transform: uppercase;
-    }
-
-    .sun {
-        color: #fff;
-    }
-
-    .moon {
-        color: #fff;
-    }
-
-    .lightmode {
-        background-color: white;
-        color: #444;
-    }
-
-    .dark-light-btns {
-        position: absolute;
-        top: 40%;
-        right: 5.9em;
-    }
-
-    .main-content-text {
-        margin-left: 200px;
-    }
-
-    footer {
-        position: relative;
-        padding: 20px 0 30px 0;
-        margin: 0;
-        background-color: black;
-        height: 40px;
-        clear: both;
-    }
-
-    .bottom-footer-nav {
-        display: flex;
-        grid-column: 2 / 3;
-        justify-content: center;
-    }
-
-    .bottom-footer-nav ul {
-        display: flex;
-        padding: 10px 0 10px 0;
-    }
-
-    .bottom-footer-nav li {
-        margin-left: 3em;
-        margin-right: 3em;
-        margin-bottom: 0;
-    }
-
-    .bottom-footer-nav a {
-        font-size: 1.2rem;
-        position: relative;
-    }
-
-    .bottom-footer-nav a:hover {
-        color: lightblue;
-        -ms-transform: scale(1.5);
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5);
-        text-transform: uppercase;
-    }
-
-    .vertical-line {
-        position: absolute;
-        top: 3px;
-        right: -49px;
-        color: lightblue;
-    }
-
-    /*Styling for other pages starts here*/
-    .main-content-contactme-page {
-        box-sizing: border-box;
-        margin-top: 200px;
-        padding: 0 300px;
-    }
-
-    .resumepage-wrapper,
-    .myequipmentpage-container,
-    .projectpage-container {
-        margin-left: 200px;
-        line-height: 3.2em;
-    }
-
-}
-/*Styling for other pages ends here*/
-
-@media screen and (min-width: 1500px) {
-    .main-content-contactme-page {
-        padding: 0 600px;
-    }
-}
+  /* Footer section ------------------------------------------------Footer section */

@@ -2,97 +2,253 @@
 <html>
 
 <head>
-    <title>Johnnwigwe's website</title>
-    <link rel="stylesheet" href="assets/css/Johnnwigwe.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet" />
-    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
-    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
+  <title>Johnnwigwe</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- link to external CSS -->
+  <link rel="stylesheet" href="assets/css/Johnnwigwe.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- fontawesome links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet" />
+  <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
+  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
+
+
 </head>
 
 <body class="darkbody">
-    <div id="container">
-        <div id="main">
 
-            <header class="header" id="header">
-                <h1 class="main-header-h1"><a href="index.html">John Nwigwe</a></h1>
-                <input type="checkbox" id="nav-toggle" class="nav-toggle">
-                <nav class="first-nav">
-                    <ul>
-                        <li><a href="index.html"><b>HOME</b></a></li>
-                        <li><a href="https://github.com/johnnwigwe" target="_blank">Github</a></li>
-                        <li><a href="Contact Me.html">Contact Me</a></li>
-                        <li><a href="Projects.html">Projects</a></li>
-                        <li><a href="Equipment.html">Equipment</a></li>
-                    </ul>
-                </nav>
-                <label for="nav-toggle" class="nav-toggle-label">
-                    <span></span>
-                </label>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">John Nwigwe</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about-me">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#resume">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact-me">Contact Me</a>
+          </li>
+        </ul>
 
-                <div class="dark-light-btns">
-                    <span class="white hide" id="dark-theme" onclick="changeColorMode('dark')">
-                        <i class="fa fa-moon-o" aria-hidden="true"></i>
-                    </span>
-                    <span class="white show" id="light-theme" onclick="changeColorMode('light')">
-                        <i class="fa fa-sun-o" aria-hidden="true"></i>
-                    </span>
-                </div>
-            </header>
-            <div class="main-content">
-                <div class="img-container">
-                    <img src="assets/img/architecture-bridge-connection-417054.jpg" alt="image of john nwigwe logo" class="jmr-img" style="width: 100%">
-                    <div class="background-effect">
-                        <div class="img-Welcome"><a>Welcome</a></div>
-                    </div>
-                </div>
-                <div class="main-content-text">
-                    <div id="alittle-aboutme">
-                        <h2>Aspiring Software Developer.</h2>
-                        <p>learning software Development with online resources, I have built static website recreating popular sites like Playstation and insomniac games home pages.</p>
-                    </div>
-
-                    <div class="skills-ihave-section">
-                        <h2>Things I've Learned.</h2>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Little Javascript</li>
-                        </ul>
-                    </div>
-
-                    <div class="skills-required-section">
-                        <h2>Things I need to learn</h2>
-                        <ul>
-                            <li>Javascript</li>
-                            <li>C++</li>
-                            <li>Java</li>
-                            <li>C#</li>
-                            <li>PHP</li>
-                            <li>Swift</li>
-                            <li>Python</li>
-                            <li>Algorithm</li>
-                            <li>objective c</li>
-                            <li>Machine Learning</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="dark-light-btns">
+          <span class="white hide" id="dark-theme" onclick="changeColorMode('dark')">
+            <i class="fa fa-moon-o" aria-hidden="true"></i>
+          </span>
+          <span class="white show" id="light-theme" onclick="changeColorMode('light')">
+            <i class="fa fa-sun-o" aria-hidden="true"></i>
+          </span>
         </div>
+
+      </div>
     </div>
-    <footer>
-        <div class="bottom-footer-nav">
-            <nav>
-                <ul>
-                    <li><a title="Resume" href="Resume.html">Resume</a><span class="vertical-line">|</span></li>
-                    <li><a title="Contact Me" href="Contact Me.html">Contact Me</a><span class="vertical-line">|</span></li>
-                    <li><a title="My Github" href="https://github.com/johnnwigwe" target="_blank">Github</a><span class="vertical-line">|</span></li>
-                    <li><a title="My Linkedin" href="https://www.linkedin.com/in/john-n-79080216a/" target="_blank">LinkedIn</a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
-    <script src="assets/js/Johnnwigwe.js"></script>
-</body></html>
+  </nav>
+
+  <div class="img-container" id="home">
+    <img src="assets/img/architecture-bridge-connection-417054.jpg" alt="image of john nwigwe logo" class="jmr-img" style="width: 100%">
+    <div class="background-effect">
+      <div class="img-Welcome"><a>Welcome</a></div>
+    </div>
+  </div>
+
+  <!-- About me -->
+  <section class="container" id="about-me">
+    <h2>Aspiring Software Developer.</h2>
+    <p>learning software Development with online resources, I have built static website recreating popular sites like Playstation and insomniac games home pages.</p>
+
+    <h2>Things I've Learned.</h2>
+    <ul>
+      <li>HTML.</li>
+      <li>CSS.</li>
+      <li>Little Javascript.</li>
+    </ul>
+
+    <h2>Things I need to learn</h2>
+    <ul>
+      <li>Javascript.</li>
+      <li>C++.</li>
+      <li>Java.</li>
+      <li>C#.</li>
+      <li>PHP.</li>
+      <li>Swift.</li>
+      <li>Python.</li>
+      <li>Algorithms.</li>
+      <li>objective c.</li>
+      <li>Machine Learning.</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section class="container" id="projects">
+    <h2><b>Projects</b></h2>
+    <p>Here are a list of my practice projects</p>
+    <ul>
+      <li>My Website written in html, css and Javascript check it out <a href="https://johnnwigwe.github.io/" target="_blank">Here.</a></li>
+    </ul>
+  </section>
+
+  <!-- Resume -->
+  <section class="container" id="resume">
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-header">My Resume</h2>
+        <h3><b>JOHN NWIGWE</b></h3>
+        <ul>
+          <li>MY ADDRESS.</li>
+          <li>MY PHONE NUMBER.</li>
+          <li>MY EMAIL ADDRESS.</li>
+        </ul>
+
+        <h3><b>Objective</b></h3>
+        <p>&#8226; I am writing this resume to highlight my skills, work ethic, and achievements to discuss my employment at your company.</p>
+
+        <h3><b>Education</b></h3>
+        <p>&#8226; De Brabander California college of Nursing Stockton, CA.</p>
+        <p>&#8226; High school or equivalent in GED.</p>
+
+        <h3><b>Skills &amp; Abilities</b></h3>
+        <ul>
+          <li>CNA.</li>
+          <li>CNA Certified.</li>
+          <li>Home Health.</li>
+          <li>HTML.</li>
+          <li>CSS.</li>
+          <li>CPR.</li>
+        </ul>
+
+        <h3><b>Experience</b></h3>
+        <p>&#8226; CNA - Certified Nursing Assistant Volunteers of America, PACE In Home Health Montrose, CO.</p>
+        <p>&#8226; July 2017 to April 2019.</p>
+        <p>&#8226; Senior Community Care PACE seeks to keep the elderly in their homes and as independent as they can be. My job is to provide supplementary assistance to the elderly in their homes. My duties ranged from household chores like laundry
+          and cleaning to hospice care and medication administration.</p>
+        <br>
+
+        <p>&#8226; CNA - Certified Nursing Assistant Volunteers of America, The Homestead at Montrose Montrose, CO.</p>
+        <p>&#8226; September 2015 to July 2017.</p>
+        <p>&#8226; Homestead was an assisted living facility so my job was to assist the nurse with vitals and with my Quality Medication Administration Project (QMAP) certification, I could administer certain meds under the supervision and direction
+          of the nurse on duty.</p>
+        <br>
+
+        <p>&#8226; CNA - Certified Nursing Assistant Windsor Elmhaven Care Center Stockton, CA.</p>
+        <p>&#8226; October 2013 to August 2015.</p>
+        <p>&#8226; I worked in the sub-acute section of the facility. My job required me to assist comatose patients with their ADLs, some have artificial airways and feeding apparatus. I also assisted the nurses with vitals, positioning and
+          observation.</p>
+        <br>
+
+        <h3><b>Software</b></h3>
+        <ul>
+          <li>I built my personal website with HTML, CSS and JAVASCRIPT the site is <a href="https://johnnwigwe.github.io/" target="_blank">Here.</a>
+          </li>
+          <li>I have recreated existing sites like PlayStation and insomniac home page. All of them where written in html, CSS and little JavaScript, you can find them in my repository on GitHub.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact me -->
+  <section class="container" id="contact-me">
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-header">Send me a message</h2>
+        <form action="action_page.php" method="post">
+
+          <div class="form-group">
+            <label for="fname">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name...">
+          </div>
+
+          <div class="form-group">
+            <label for="email" id="email">Email</label>
+            <input type="email" id="email" name="emailaddress" placeholder="Your emailaddress...">
+          </div>
+
+          <div class="form-group">
+            <label for="reason">Reason</label>
+            <select id="reason" name="reason">
+              <option value="whats happening">Whats happening...</option>
+              <option value="business">Technology</option>
+              <option value="software">Software</option>
+              <option value="projects">Projects</option>
+              <option value="technology">Business</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Whats up...." style="height:200px" spellcheck="true" class="form-control"></textarea>
+          </div>
+
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="social d-flex justify-content-center">
+      <a class="js-scroll-trigger" href="#home" title="Home">
+        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+      </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      <a class="js-scroll-trigger" href="#about-me" title="About me">
+        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+      </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      <a class="js-scroll-trigger" href="#projects" title="Projects">
+        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+      </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      <a class="js-scroll-trigger" href="#resume" title="Resume">
+        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+      </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      <a title="My Linkedin" href="https://www.linkedin.com/in/john-n-79080216a/" target="_blank">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      <a title="My Github" href="https://github.com/johnnwigwe" target="_blank">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+      </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="assets/js/jqBootstrapValidation.js"></script>
+  <script src="assets/js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="assets/js/Johnnwigwe.js"></script>
+
+</body>
+
+</html>
