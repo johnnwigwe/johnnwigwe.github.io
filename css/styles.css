@@ -496,9 +496,17 @@ h4 {
   color: var(--accent-2);
 }
 
+.project .tag {
+  align-self: flex-start;
+}
+
 .project .links {
   display: flex;
   gap: 1rem;
+}
+
+.project .links .soon {
+  color: var(--muted);
 }
 
 .contact-wrap {
