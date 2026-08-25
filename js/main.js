@@ -1,11 +1,59 @@
 // Put your real email here so the contact form can open a mail draft.
 const CONTACT_EMAIL = "";
 
+const THEME_KEY = "theme";
 const nav = document.querySelector(".site-nav");
 const toggle = document.querySelector(".nav-toggle");
+const themeToggle = document.querySelector(".theme-toggle");
 const year = document.getElementById("year");
 const form = document.getElementById("contact-form");
 const statusEl = document.getElementById("form-status");
+
+function systemTheme() {
+  return window.matchMedia("(prefers-color-scheme: light)").matches
+    ? "light"
+    : "dark";
+}
+
+function currentTheme() {
+  const saved = localStorage.getItem(THEME_KEY);
+  if (saved === "light" || saved === "dark") return saved;
+  return systemTheme();
+}
+
+function syncThemeButton(theme) {
+  if (!themeToggle) return;
+  const next = theme === "dark" ? "light" : "dark";
+  themeToggle.setAttribute("aria-label", `Switch to ${next} mode`);
+  themeToggle.setAttribute("aria-pressed", String(theme === "dark"));
+  const label = themeToggle.querySelector(".theme-toggle-text");
+  if (label) label.textContent = next === "light" ? "Light" : "Dark";
+}
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+  syncThemeButton(theme);
+}
+
+applyTheme(currentTheme());
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    const next =
+      document.documentElement.getAttribute("data-theme") === "dark"
+        ? "light"
+        : "dark";
+    localStorage.setItem(THEME_KEY, next);
+    applyTheme(next);
+  });
+}
+
+window.matchMedia("(prefers-color-scheme: light)").addEventListener("change", () => {
+  if (localStorage.getItem(THEME_KEY) === "light" || localStorage.getItem(THEME_KEY) === "dark") {
+    return;
+  }
+  applyTheme(systemTheme());
+});
 
 if (year) {
   year.textContent = String(new Date().getFullYear());
