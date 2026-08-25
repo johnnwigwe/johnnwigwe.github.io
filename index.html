@@ -1,256 +1,397 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Nwigwe — Developer Portfolio</title>
+    <meta
+      name="description"
+      content="John Nwigwe is an aspiring software developer building static sites with HTML, CSS, and JavaScript."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-<head>
-  <title>Johnnwigwe</title>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="logo" href="#home">JN</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="sr-only">Menu</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#resume">Resume</a>
+          <a href="#skills">Skills</a>
+          <a href="#journey">Journey</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- link to external CSS -->
-  <link rel="stylesheet" href="assets/css/Johnnwigwe.css">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-  <!-- fontawesome links -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet" />
-  <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
-  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
-
-
-</head>
-
-<body class="darkbody">
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="index.html">John Nwigwe</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <!-- Menu -->
-        <i class="fa fa-bars" aria-hidden="true"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav text-uppercase ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about-me">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#resume">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact-me">Contact Me</a>
-          </li>
-        </ul>
-
-        <div class="dark-light-btns">
-          <span class="white hide" id="dark-theme" onclick="changeColorMode('dark')">
-            <i class="fa fa-moon-o" aria-hidden="true"></i>
-          </span>
-          <span class="white show" id="light-theme" onclick="changeColorMode('light')">
-            <i class="fa fa-sun-o" aria-hidden="true"></i>
-          </span>
+    <main id="main">
+      <section id="home" class="hero">
+        <div class="wrap hero-inner">
+          <h1>John Nwigwe</h1>
+          <p class="lede">Aspiring software developer.</p>
+          <p>
+            I am learning software development with online resources and
+            building static websites — including recreations of popular pages
+            like PlayStation and Insomniac Games.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">See projects</a>
+            <a class="btn ghost" href="#contact">Contact me</a>
+          </div>
         </div>
+      </section>
 
-      </div>
-    </div>
-  </nav>
+      <section id="about" class="section">
+        <div class="wrap">
+          <h2>About me</h2>
+          <div class="split">
+            <p>
+              I am a career-changing developer with a background in healthcare.
+              For years I worked as a Certified Nursing Assistant, supporting
+              people in their homes and in care facilities. That work taught me
+              patience, attention to detail, and how to stay calm when things
+              get hard.
+            </p>
+            <p>
+              I am now focused on software. I started with HTML, CSS, and
+              Bootstrap, and I am deepening my JavaScript while I practice by
+              shipping small sites. My goal is to grow into a software engineer
+              who can build useful, reliable web applications.
+            </p>
+          </div>
+        </div>
+      </section>
 
-  <div class="img-container" id="home">
-    <img src="assets/img/architecture-bridge-connection-417054.jpg" alt="image of john nwigwe logo" class="jmr-img" style="width: 100%">
-    <div class="background-effect">
-      <div class="img-Welcome"><a>Welcome</a></div>
-    </div>
-  </div>
+      <section id="resume" class="section alt">
+        <div class="wrap">
+          <h2>Resume</h2>
+          <p class="section-intro">
+            Healthcare experience plus early software projects. Contact details
+            are available on request.
+          </p>
 
-  <!-- About me -->
-  <section class="container" id="about-me">
-    <h2>Aspiring Software Developer.</h2>
-    <p>learning software Development with online resources, I have built static website recreating popular sites like Playstation and insomniac games home pages.</p>
+          <article class="card">
+            <h3>Objective</h3>
+            <p>
+              I want to highlight my skills, work ethic, and what I have built
+              so far, and talk about how I can contribute on a software team.
+            </p>
+          </article>
 
-    <h2>Things I've Learned.</h2>
-    <ul>
-      <li>HTML.</li>
-      <li>CSS.</li>
-      <li>Little Javascript.</li>
-      <li>Bootstrap.</li>
-    </ul>
-
-    <h2>Things I need to learn</h2>
-    <ul>
-      <li>Javascript.</li>
-      <li>C++.</li>
-      <li>Java.</li>
-      <li>C#.</li>
-      <li>PHP.</li>
-      <li>Swift.</li>
-      <li>Python.</li>
-      <li>Frameworks.</li>
-      <li>Algorithms.</li>
-      <li>Data structures.</li>
-      <li>Machine Learning.</li>
-    </ul>
-  </section>
-
-  <!-- Projects -->
-  <section class="container" id="projects">
-    <h2><b>Projects</b></h2>
-    <p>Here are a list of my practice projects</p>
-    <ul>
-      <li>My Website written in html, css and Javascript check it out <a href="https://johnnwigwe.github.io/" target="_blank">Here.</a></li>
-    </ul>
-  </section>
-
-  <!-- Resume -->
-  <section class="container" id="resume">
-    <div class="card">
-      <div class="card-body">
-        <h2 class="card-header">My Resume</h2>
-        <h3><b>JOHN NWIGWE</b></h3>
-        <ul>
-          <li>MY ADDRESS.</li>
-          <li>MY PHONE NUMBER.</li>
-          <li>MY EMAIL ADDRESS.</li>
-        </ul>
-
-        <h3><b>Objective</b></h3>
-        <p>&#8226; I am writing this resume to highlight my skills, work ethic, and achievements to discuss my employment at your company.</p>
-
-        <h3><b>Education</b></h3>
-        <p>&#8226; De Brabander California college of Nursing Stockton, CA.</p>
-        <p>&#8226; High school or equivalent in GED.</p>
-
-        <h3><b>Skills &amp; Abilities</b></h3>
-        <ul>
-          <li>CNA.</li>
-          <li>CNA Certified.</li>
-          <li>Home Health.</li>
-          <li>HTML.</li>
-          <li>CSS.</li>
-          <li>CPR.</li>
-        </ul>
-
-        <h3><b>Experience</b></h3>
-        <p>&#8226; CNA - Certified Nursing Assistant Volunteers of America, PACE In Home Health Montrose, CO.</p>
-        <p>&#8226; July 2017 to April 2019.</p>
-        <p>&#8226; Senior Community Care PACE seeks to keep the elderly in their homes and as independent as they can be. My job is to provide supplementary assistance to the elderly in their homes. My duties ranged from household chores like laundry
-          and cleaning to hospice care and medication administration.</p>
-        <br>
-
-        <p>&#8226; CNA - Certified Nursing Assistant Volunteers of America, The Homestead at Montrose Montrose, CO.</p>
-        <p>&#8226; September 2015 to July 2017.</p>
-        <p>&#8226; Homestead was an assisted living facility so my job was to assist the nurse with vitals and with my Quality Medication Administration Project (QMAP) certification, I could administer certain meds under the supervision and direction
-          of the nurse on duty.</p>
-        <br>
-
-        <p>&#8226; CNA - Certified Nursing Assistant Windsor Elmhaven Care Center Stockton, CA.</p>
-        <p>&#8226; October 2013 to August 2015.</p>
-        <p>&#8226; I worked in the sub-acute section of the facility. My job required me to assist comatose patients with their ADLs, some have artificial airways and feeding apparatus. I also assisted the nurses with vitals, positioning and
-          observation.</p>
-        <br>
-
-        <h3><b>Software</b></h3>
-        <ul>
-          <li>I built my personal website with HTML, CSS and JAVASCRIPT the site is <a href="https://johnnwigwe.github.io/" target="_blank">Here.</a>
-          </li>
-          <li>I have recreated existing sites like PlayStation and insomniac home page. All of them where written in html, CSS and little JavaScript, you can find them in my repository on GitHub.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact me -->
-  <section class="container" id="contact-me">
-    <div class="card">
-      <div class="card-body">
-        <h2 class="card-header">Send me a message</h2>
-        <form action="action_page.php" method="post">
-
-          <div class="form-group">
-            <label for="fname">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name...">
+          <div class="grid-2">
+            <article class="card">
+              <h3>Education</h3>
+              <ul class="plain-list">
+                <li>
+                  De Brabander California College of Nursing, Stockton, CA
+                </li>
+                <li>High school or equivalent (GED)</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Healthcare skills</h3>
+              <ul class="plain-list">
+                <li>Certified Nursing Assistant (CNA)</li>
+                <li>Home health</li>
+                <li>CPR</li>
+                <li>QMAP medication administration</li>
+              </ul>
+            </article>
           </div>
 
-          <div class="form-group">
-            <label for="email" id="email">Email</label>
-            <input type="email" id="email" name="emailaddress" placeholder="Your emailaddress...">
-          </div>
+          <h3 class="subhead">Experience</h3>
+          <ol class="timeline">
+            <li>
+              <div class="when">Jul 2017 – Apr 2019</div>
+              <div>
+                <h4>CNA — Volunteers of America, PACE In Home Health</h4>
+                <p class="where">Montrose, CO</p>
+                <p>
+                  Senior Community Care PACE helps older adults stay at home
+                  and stay independent. I provided in-home support ranging from
+                  household chores to hospice care and medication
+                  administration.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="when">Sep 2015 – Jul 2017</div>
+              <div>
+                <h4>CNA — Volunteers of America, The Homestead at Montrose</h4>
+                <p class="where">Montrose, CO</p>
+                <p>
+                  Assisted living: vitals with the nurse, and medication
+                  administration under nurse supervision with QMAP
+                  certification.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="when">Oct 2013 – Aug 2015</div>
+              <div>
+                <h4>CNA — Windsor Elmhaven Care Center</h4>
+                <p class="where">Stockton, CA</p>
+                <p>
+                  Sub-acute care: assisted comatose patients with ADLs,
+                  including those with artificial airways and feeding
+                  apparatus. Helped nurses with vitals, positioning, and
+                  observation.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
 
-          <div class="form-group">
-            <label for="reason">Reason</label>
-            <select id="reason" name="reason">
-              <option value="whats happening">Whats happening...</option>
-              <option value="business">Technology</option>
-              <option value="software">Software</option>
-              <option value="projects">Projects</option>
-              <option value="technology">Business</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
+      <section id="skills" class="section">
+        <div class="wrap">
+          <h2>Tech stack / skills</h2>
+          <p class="section-intro">
+            What I use today, and what I am still building fluency in.
+          </p>
+          <ul class="skill-grid">
+            <li>
+              <strong>HTML</strong>
+              <span>Semantic pages and accessible structure</span>
+            </li>
+            <li>
+              <strong>CSS</strong>
+              <span>Layout, responsive design, custom styling</span>
+            </li>
+            <li>
+              <strong>JavaScript</strong>
+              <span>Working knowledge — this is my main focus</span>
+            </li>
+            <li>
+              <strong>Bootstrap</strong>
+              <span>Used on my first portfolio; moving to custom CSS</span>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Whats up...." style="height:200px" spellcheck="true" class="form-control"></textarea>
-          </div>
+      <section id="journey" class="section alt">
+        <div class="wrap">
+          <h2>Learning journey</h2>
+          <ol class="steps">
+            <li>
+              <span class="num">01</span>
+              <div>
+                <h3>Healthcare first</h3>
+                <p>
+                  Years as a CNA in California and Colorado. That is still the
+                  backbone of how I show up: reliable, careful, people-first.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="num">02</span>
+              <div>
+                <h3>First websites</h3>
+                <p>
+                  Learned HTML and CSS online, then Bootstrap. Shipped a
+                  one-page portfolio on GitHub Pages.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="num">03</span>
+              <div>
+                <h3>Practice by copying the real web</h3>
+                <p>
+                  Recreated pages like PlayStation and Insomniac Games to train
+                  layout, assets, and small bits of JavaScript.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="num">04</span>
+              <div>
+                <h3>Now</h3>
+                <p>
+                  Rebuilding this site without Bootstrap so the CSS and
+                  JavaScript are mine. Next: stronger JS and computer science
+                  fundamentals.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
 
-          <button type="submit" class="btn">Submit</button>
-        </form>
+      <section id="roadmap" class="section">
+        <div class="wrap">
+          <h2>Currently learning / roadmap</h2>
+          <p class="section-intro">
+            Ordered by what I am working on first, not by everything I might
+            learn someday.
+          </p>
+          <ol class="roadmap">
+            <li class="now">
+              <span class="tag">Now</span>
+              <h3>JavaScript</h3>
+              <p>DOM, events, and small interactive features on real pages.</p>
+            </li>
+            <li>
+              <span class="tag">Next</span>
+              <h3>Python</h3>
+              <p>A second language for scripts and problem-solving practice.</p>
+            </li>
+            <li>
+              <span class="tag">Then</span>
+              <h3>Data structures &amp; algorithms</h3>
+              <p>How to think about problems, not only how to style pages.</p>
+            </li>
+            <li>
+              <span class="tag">Later</span>
+              <h3>A framework</h3>
+              <p>
+                After vanilla JS is solid — then a library or framework, not
+                before.
+              </p>
+            </li>
+            <li>
+              <span class="tag">Horizon</span>
+              <h3>Wider stack</h3>
+              <p>
+                C++, Java, C#, PHP, Swift, and machine learning stay on the
+                long list. I am not studying all of them at once.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="projects" class="section alt">
+        <div class="wrap">
+          <h2>Projects</h2>
+          <p class="section-intro">Practice work from GitHub and GitHub Pages.</p>
+          <div class="project-grid">
+            <article class="project">
+              <h3>Personal website</h3>
+              <p>
+                Original portfolio in HTML, CSS, JavaScript, and Bootstrap.
+                This rebuild is the vanilla version.
+              </p>
+              <p class="meta">HTML · CSS · JavaScript</p>
+              <p class="links">
+                <a href="https://johnnwigwe.github.io/" target="_blank" rel="noopener noreferrer">Live</a>
+                <a href="https://github.com/johnnwigwe/johnnwigwe.github.io" target="_blank" rel="noopener noreferrer">Code</a>
+              </p>
+            </article>
+            <article class="project">
+              <h3>Betsy Beauty</h3>
+              <p>Static site practice with custom CSS.</p>
+              <p class="meta">HTML · CSS</p>
+              <p class="links">
+                <a href="https://johnnwigwe.github.io/BetsyBeauty/" target="_blank" rel="noopener noreferrer">Live</a>
+                <a href="https://github.com/johnnwigwe/BetsyBeauty" target="_blank" rel="noopener noreferrer">Code</a>
+              </p>
+            </article>
+            <article class="project">
+              <h3>Umuatugbuoma In Diaspora</h3>
+              <p>Community-oriented HTML site, hosted on GitHub Pages.</p>
+              <p class="meta">HTML</p>
+              <p class="links">
+                <a href="https://johnnwigwe.github.io/Umuatugbuoma-In-Diaspora/" target="_blank" rel="noopener noreferrer">Live</a>
+                <a href="https://github.com/johnnwigwe/Umuatugbuoma-In-Diaspora" target="_blank" rel="noopener noreferrer">Code</a>
+              </p>
+            </article>
+            <article class="project">
+              <h3>SevenBuilds</h3>
+              <p>Additional GitHub Pages project.</p>
+              <p class="meta">Web</p>
+              <p class="links">
+                <a href="https://johnnwigwe.github.io/SevenBuilds/" target="_blank" rel="noopener noreferrer">Live</a>
+                <a href="https://github.com/johnnwigwe/SevenBuilds" target="_blank" rel="noopener noreferrer">Code</a>
+              </p>
+            </article>
+            <article class="project">
+              <h3>Site recreations</h3>
+              <p>
+                Practice clones of PlayStation and Insomniac Games homepages —
+                HTML, CSS, and a little JavaScript.
+              </p>
+              <p class="meta">HTML · CSS · JavaScript</p>
+              <p class="links">
+                <a href="https://github.com/johnnwigwe" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="wrap contact-wrap">
+          <div>
+            <h2>Contact me</h2>
+            <p>
+              The easiest public place to reach me is GitHub. The form below
+              opens your email app. Add your address in
+              <code>js/main.js</code> so messages go to you.
+            </p>
+            <p>
+              <a class="btn ghost" href="https://github.com/johnnwigwe" target="_blank" rel="noopener noreferrer">github.com/johnnwigwe</a>
+            </p>
+          </div>
+          <form id="contact-form" novalidate>
+            <label>
+              Name
+              <input type="text" name="name" required autocomplete="name" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+            <label>
+              Reason
+              <select name="reason">
+                <option value="general">What’s happening…</option>
+                <option value="technology">Technology</option>
+                <option value="software">Software</option>
+                <option value="projects">Projects</option>
+                <option value="business">Business</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <p id="form-status" class="form-status" role="status"></p>
+            <button class="btn primary" type="submit">Send message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>© <span id="year"></span> John Nwigwe</p>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="social d-flex justify-content-center">
-      <a class="js-scroll-trigger" href="#home" title="Home">
-        <i class="fa fa-file-text-o" aria-hidden="true"></i>
-      </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-      <a class="js-scroll-trigger" href="#about-me" title="About me">
-        <i class="fa fa-file-text-o" aria-hidden="true"></i>
-      </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-      <a class="js-scroll-trigger" href="#projects" title="Projects">
-        <i class="fa fa-file-text-o" aria-hidden="true"></i>
-      </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-      <a class="js-scroll-trigger" href="#resume" title="Resume">
-        <i class="fa fa-file-text-o" aria-hidden="true"></i>
-      </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-      <a title="My Linkedin" href="https://www.linkedin.com/in/john-n-79080216a/" target="_blank">
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
-      </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-      <a title="My Github" href="https://github.com/johnnwigwe" target="_blank">
-        <i class="fa fa-github" aria-hidden="true"></i>
-      </a>
-      </div>
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Contact form JavaScript -->
-  <script src="assets/js/jqBootstrapValidation.js"></script>
-  <script src="assets/js/contact_me.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="assets/js/Johnnwigwe.js"></script>
-
-</body>
-
+    <script src="js/main.js"></script>
+  </body>
 </html>
