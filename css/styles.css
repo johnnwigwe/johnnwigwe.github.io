@@ -209,7 +209,7 @@ code {
 }
 
 .hero {
-  padding: 5rem 0 4.5rem;
+  padding: 5rem 0 1.75rem;
 }
 
 .hero h1 {
@@ -273,6 +273,10 @@ code {
 
 .section {
   padding: 4.25rem 0;
+}
+
+#about {
+  padding-top: 2.25rem;
 }
 
 .section.alt {
